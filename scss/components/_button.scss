@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+.header__btn {
+  @include mixins.primary-btn();
+}
+.about__btn {
+  @include mixins.primary-btn($padding: 10px 50px);
+}

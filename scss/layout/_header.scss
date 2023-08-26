@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  &__logo {
+    color: variables.$primary-color;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+    &__link {
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav,
+    &__btn {
+      display: none;
+    }
+  }
+}
+.burger-menu {
+  display: none;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}

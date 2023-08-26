@@ -1,0 +1,9 @@
+@use "variables";
+@mixin primary-btn($padding: 10px 20px, $radius: 8px) {
+  background-color: variables.$primary-color;
+  padding: $padding;
+  border: none;
+  border-radius: $radius;
+  color: white;
+  cursor: pointer;
+}
